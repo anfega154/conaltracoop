@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="perfil">
+        <h1>CONALTRACOOP</h1>
+        <% if(loguin){ %>
+            <h2>Bienvenido: <strong>
+                    <%=name%>
+                </strong> <a href="logout" class="a-logout">Cerrar Sesion</a>  <a href="" class="a-logout">Cambiar contraseña</a></h2>
+
+            <% }else{%>
+                <h1> <strong>
+                        <%=name%>
+                    </strong></h1>
+                <a href="loguin" class="a-logout">Salir</a>
+                <%}%>
+    </div>
+    <br><br><br>
+    <div class="admin">
+        <% if(loguin){ %>
+        <table class="table table-bordered table-striped text-center mt" id="tabla">
+          <thead>
+          
+              <tr class=" big-primary text-blue">
+        
+          <th scope="col">USUARIO</th>
+          <th scope="col">ROL</th>
+          <th scope="col">ACCIONES</th>
+          
+              </tr>
+          </thead>
+          <TBody>
+          
+          
+          <tr>
+          <td>  <%=name%></td>
+          <td>  <%=rol%></td>
+          
+          <td>
+            <a  id="icon" href="" class="btn btn-outline-primary mt-4"><i class='bx bx-edit-alt'></i>Editar perfil</a>
+              <a  id="icon" href="" class="btn btn-outline-primary mt-4"><i class='bx bx-archive-in'></i>Generar informes</a>
+          </td>
+          
+          </tr>
+         
+          
+          </TBody>
+          
+              </table>
+              <%}%>
+
+    </div>
+
+  
+</body>
+<br>
+<hr><hr>
+<footer>
+
+    <p>Todos los derechos reservados</p>
+    <br>
+    <p>Medellin 2022</p>
+    <hr>
+    
+
+
+</footer>
+</html>

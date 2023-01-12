@@ -1,0 +1,387 @@
+body{
+
+margin: auto;
+text-align: center;
+background: linear-gradient(to right, #bee7ba, #baebb4);
+}
+
+.admin{
+
+    background-color: white;
+    width: 85%;
+    margin: 0px 0px 0px 120px;
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+#icon{
+    height: 90px;
+}
+
+.tablesecre th a {
+   margin: 0px 0px 0px 45px; 
+}
+.perfil h2 a{
+margin: 0px 0px 0px 40px;
+}
+
+/*estlos del menu*/
+
+nav {
+
+margin: 0 0 0 240px;
+	position:sticky;
+	width: 470px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #e67e22;
+}
+
+
+.loguin-form{
+width: 250px;
+margin: 0px 0px 0px 160px;
+text-align: right;
+
+border-radius: 10px;
+height: 130px;
+
+}
+
+.loguin-form form a:hover{
+color: red;
+
+}
+table tr th .nombre{
+   text-align: center;
+   margin: 0px 0px 0px 230px;
+   font-family:roboto;
+   font-weight: bold;
+}
+
+
+
+.loguin-form input[type="password"],
+.loguin-form input[type="text"]{
+    
+    width: 90%;
+    padding: 5px;
+  border: 1px solid rgb(216, 216, 227);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+border-radius: 10px;
+
+ 
+}
+
+form{
+
+    text-align: center;
+}
+
+.perfil{
+    text-align: center;
+    font-size: 10;
+}
+
+.perfil a{
+
+    
+}
+
+.btn-loguin{
+    width: 90%;
+    padding: 2px;
+    background-color: #10B981;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-loguin:hover,.btn-loguin:active{
+    color: #fff;
+    background-color: #18835f;
+    border-color: #61428f;
+}
+
+.btn-loguin:focus{
+
+    box-shadow: 0 0 0 3px rgb(221, 82, 179, 0.25);
+}
+
+.btn-register{
+    width: 100%;
+    padding: 15px;
+    background-color: #34d399;
+    border: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+    margin-top: 20px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    text-decoration: none;
+}
+.btn-register:hover,.btn-register:active{
+    color: #fff;
+    background-color: #10b981;
+    border-color: #10b981;
+}
+
+.btn-register:focus{
+
+    box-shadow: 0 0 0 3px rgb(221, 82, 179, 0.25);
+}
+
+.register-form,.contenedor{
+    width: 400px;
+    margin: 0 auto;
+    
+    }
+    .register-form h1{
+    text-align: center;
+    color: midnightblue;
+    font-size: 28px;
+    padding: 7px 0 10px 0;
+    box-shadow: #61428f;
+    
+    }
+    
+    label{
+    text-align:center;
+    color: midnightblue;
+    font-size: 17px;
+    padding: 7px 0 10px 0;
+    }
+    .register-form input[type="password"],
+    .register-form input[type="text"],
+    .register-form input[type="number"],
+    .register-form input[type="email"],
+    .register-form input[type="date"]{
+        
+        width: 100%;
+        padding: 15px;
+      border: 1px solid rgb(216, 216, 227);
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      margin-top: 10px;
+     
+    }
+    
+    .btn-cancel{
+        width: 100%;
+    padding: 15px;
+        background-color: #742828;
+        border: 0;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        text-decoration: none;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        text-decoration: none;
+        margin-top: 20px;
+       
+        
+    }
+    .btn-cancel:hover,.btn-loguin:active{
+        color: #fff;
+        background-color: #b12323;
+        border-color: #b12323;
+    }
+    
+    .btn-cancel:focus{
+    
+        box-shadow: 0 0 0 3px rgb(221, 82, 179, 0.25);
+    }
+    
+    .btn-save{
+        width: 100%;
+        padding: 15px;
+        background-color: #34d399;
+        border: 0;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-weight: bold;
+        font-size: large;
+        color: #fff;
+        margin-top: 20px;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        text-decoration: none;
+    }
+    .btn-save:hover,.btn-save:active{
+        color: #fff;
+        background-color: #10b924;
+        border-color: #10b924;
+    }
+    
+    .btn-save:focus{
+    
+        box-shadow: 0 0 0 3px rgb(221, 82, 179, 0.25);
+    }
+
+.select-css{
+display: block;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.3;
+padding: .4em 1.4em .3em .8em;
+width: 400px;
+max-width: 100%;
+box-sizing: border-box;
+margin: 0;
+background-color: #fff;
+
+}
+
+/* Estilos de link para ir a LOGIN*/
+.a-login:link, .a-login:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #10B981;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .a-login:hover, .a-login:active {
+    background-color: #10B981;
+    color: white;
+  }
+  
+  /* Estilos de link para realizar el LOGOUT*/
+  .a-logout:link, .a-logout:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #F87171;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display:inline;
+    font-size: 12px;
+    
+  }
+  
+  .a-logout:hover, .a-logout:active {
+    background-color: #F87171;
+    color: white;
+  }
+
+  .whatsapp img{
+    vertical-align: top;
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 23px;
+    animation-name: animWhatsapp;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Animación del botón */
+  @keyframes animWhatsapp{
+    0% {
+      transform: scale(1, 1) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.85, 0.85) rotate(5deg);
+    }
+}
+footer{
+
+    text-align: center;
+}
+
+
+
+
+.logo{
+
+    width:100px;
+    height: 100px;
+}
+
+#content{
+    width: 100%;
+    height: 300px;
+
+}
+
+.Recuperar{
+    font-size: 10px;
+   
+}

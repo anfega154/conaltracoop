@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="register-form">
+        <h1>Registro</h1>
+        <form action="register" method="post">
+
+<label for="user" >Usuario</label>
+<input type="number" name="user" required>
+
+<label for="nombre" >Nombres</label>
+<input type="text" name="name" required>
+
+<label for="apellido" >Apellidos</label>
+<input type="text" name="apellido" required>
+
+<label for="email" >Email</label>
+<input type="email" name="email" required>
+
+<label for="fechaNac" >Fecha de Nacimiento</label>
+<input type="date" name="FechaNac" required>
+
+
+<label for="rol" >Rol</label>
+<select name="rol" id="rol" class="select-css">
+<option value="admin" selected>Admin</option>
+<option value="gerencia" selected>Gerencia</option>
+<option value="secretaria" selected>Secretaria</option>
+<option value="operario" selected>Operario</option>
+
+</select>
+
+<label for="password" >Contraseña</label>
+<input type="password" name="pass" required>
+
+
+    
+    <input type="submit" class="btn-save" value="Guardar">
+    <a href="/" class="btn-cancel">Cancelar </a>
+
+
+
+        </form>
+
+
+
+
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <% if(typeof alert != "undefined"){%>
+        <script>
+Swal.fire({
+title:'<%= alertTitle %>',
+text:'<%= alertMessage %>',
+icon:'<%= alertIcon %>',
+showConfirmButton:'<%= showConfirmButton %>',
+timer:'<%= timer %>'
+}).then(()=>{
+window.location='/<%= ruta %> '
+})
+
+        </script>
+        <% } %>
+    
+</body>
+</html>
